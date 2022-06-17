@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+* {
+  font-family: "nunito", "Noto Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h5,
+a,
+b,
+.myNavbar,
+.icon-contact {
+  color: #f15412;
+}
+
+section {
+  padding-top: 6rem;
+}
+
+a:hover {
+  color: black;
+}
+
+.btn-message {
+  background-color: #f15412;
+  border: 1px solid #f15412;
+}
+
+.btn-message:hover {
+  border: 1px solid #f15412;
+  color: #f15412;
+  background-color: white;
+}
+
+footer {
+  height: 60px;
+  background-color: #f15412;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    padding-top: 2rem;
+  }
+  .greetings {
+    margin-top: 1.5rem;
+  }
+  .input-name {
+    margin-bottom: 1rem;
+  }
+}
