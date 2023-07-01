@@ -7,14 +7,14 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] bg-white bg-opacity-70;
-  backdrop-filter: blur(5px);
+  @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm dark:bg-dark dark:bg-opacity-50;
+  /* backdrop-filter: blur(5px); */
   /* add bottom border */
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .hamburger-line {
-  @apply w-[30px] h-[2px] my-2 block bg-dark;
+  @apply my-2 block h-[2px] w-[30px] bg-dark dark:bg-white;
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -25,4 +25,8 @@ body {
 }
 .hamburger-active > span:nth-child(3) {
   @apply -rotate-45;
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
 }
