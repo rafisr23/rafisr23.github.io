@@ -816,6 +816,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-stretch {
+  justify-content: stretch;
+}
+
 .self-end {
   align-self: flex-end;
 }
